@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+.container {
+    background-color: #000000;
+    background-position: center;
+    color: rgb(241, 221, 221);
+    font-size: large;
+    margin: 1%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.rows {
+    width: 100%;
+    position: relative;
+}
+
+
+/*
+.image-overlay {
+ position: absolute; top: 0;   left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.7);
+display: flex;
+ flex-direction: column;
+   align-items: center;
+justify-content: center;
+opacity: 0;
+transition: opacity 0.23s;
+}
+*/
+
+
+/* .image-overlay * {
+                        transform: translateY(60px);
+                        transition: transform(0.23s);
+                    }
+                    
+                    .image-overlay:hover {
+                        opacity: 1;
+                    }
+                    
+                    .image-overlay * {
+                        transform: translateY(0);
+                    }
+                    
+                     :hover .hover-name {
+                        font-weight: light;
+                        font-size: 1.25em;
+                        margin-top: 0.23em;
+                    }
+                    
+                    .overlay-image {
+                        font-size: 2em;
+                        font-weight: bold;
+                    }
+                    */
+
+#movies-row {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .6s ease-in-out;
+    transition: .4s ease-in-out;
+    max-width: 200px;
+    height: none;
+}
+
+#movies-row:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+h2 {
+    color: #000000;
+    text-shadow: 1 px 0px #0a0a0a;
+    align-item: center;
+    margin: 12px;
+}
+
+.homes {
+    background-image: url("pexels-tima-miroshnichenko-7991238.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sign-up {
+    display: flex;
+    flex-shrink: 2;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    min-height: 10vh;
+    color: #fff;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20px;
+    background-color: rgb(109, 12, 12);
+    padding-left: none;
+    padding-bottom: 10px;
+    padding-right: 40px;
+}
+
+.homes:hover {
+    background: linear-gradient(rgba(197, 39, 20, 0.3));
+}
+
+#movies-row {
+    display: flexbox;
+    width: 300px;
+    height: 200px;
+    box-shadow: 4px 6px 4px 3px rgba(197, 10, 10, 0.8);
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+#search {
+    width: 350px;
+    height: 18px;
+    justify-content: center;
+    padding: 1px;
+    margin-left: 30px;
+    padding-right: 1px;
+    box-shadow: 3px 1px 3px 1px rgba(197, 10, 10, 0.8);
+    border: none !important;
+    border-radius: 100px;
+    background-color: transparent;
+}
+
+#titlename {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    margin: 25px;
+    align-items: center;
+    padding: 1px, 0px 2px, 1px;
+    font-size: 10px;
+}
+
+#checki {
+    color: white;
+    text-shadow: 2px solid black;
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 30%;
+    margin-right: 70%;
+    animation-name: rainbow;
+    animation-duration: 8s;
+}
+
+@keyframes rainbow {
+    0% {
+        left: 900px;
+        height: auto;
+        -webkit-border-before-width: 2s;
+    }
+    50% {
+        background-color: transparent;
+        left: 100px;
+    }
+    100% {
+        right: -100px;
+    }
+}
+
+.nav-bar {
+    display: flex;
+    flex-shrink: 4;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    min-height: 10vh;
+    color: #fff;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70px;
+    background-color: rgb(197, 19, 19, 0.9);
+    padding-left: 180px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+}
+
+.nav-bar:hover {
+    background-color: rgba(212, 14, 14, 0.644);
+    height: auto;
+    width: auto;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgb(109, 12, 12);
+    overflow: auto;
+}
+
+span {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: rgb(49, 8, 8);
+    text-shadow: 0 20px 10px 3px;
+}
+
+span:first-child {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: rgb(242, 234, 234);
+}
+
+.navbar a {
+    float: left;
+    padding: 18px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #000000;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+
+#main {
+    width: cover;
+    height: cover;
+    margin-top: 12px;
+    justify-content: center;
+}
+
+.nav2 {
+    border: 1px solid lavender;
+}
+
+#header:hover {
+    background-color: rgb(167, 10, 10);
+    color: #fff;
+    transition: 0.2s;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.2s;
+    opacity: 0.4;
+    font-family: 'Raleway', sans-serif;
+    ;
+}
+
+.container-2 {
+    color: rgb(252, 248, 248);
+    background-color: rgb(5, 5, 5);
+}
+
+#know {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-size: san-serif;
+    margin-top: 30px;
+}
+
+#subbar {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-size: san-serif;
+    margin-top: 30px;
+    background: rgb(92, 88, 88);
+    background-size: 70px;
+    border-radius: 100px;
+}
+
+.lorem {
+    font-family: 'Raleway', sans-serif;
+    align-text: center;
+    margin: 20px;
+}
+
+.sub-div {}
+
+.subdare {
+    width: 100%;
+    min-height: auto;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.subdare h2 {
+    color: #fff;
+    font-size: 40px;
+    font-family: "quicksand", sans-serif;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.price-row {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    height: 70vh;
+    border-radius: 20px;
+    justify-content: center;
+    grid-template-column: repeat(auto-fit, minimax(250px, 1fr));
+    grid-gap: 40px;
+}
+
+.price-col {
+    background: rgba(238, 229, 229, 0.2);
+    padding: 10% 15%;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#subp {
+    font-family: "quicksand", san-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.price-col ul {
+    list-style: none;
+    text-align: left;
+    margin: 12px 0;
+}
+
+.price-col ul li {
+    margin: 10px 0;
+}
+
+.price-col h3 {
+    margin: 17px 0 30px;
+    font-size: 30px;
+}
+
+.price-col ul li::before {
+    content: '\2022';
+    color: rgb(139, 6, 6);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.price-col button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.price-col button:hover {
+    color: #fff;
+    background: rgb(139, 6, 6);
+    transition: 0.6s;
+    transform: translate(2px);
+}
+
+.container4 {
+    max-width: 100%;
+    margin: auto;
+    background: black;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    color: #fff;
+}
+
+.footerside {
+    padding: 0;
+}
+
+.collr a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.collr a:hover {
+    color: #fff;
+    background: rgba(173, 13, 13, 0.6);
+}
+
+
+/*responsive footer side
+      
+      @media(max-width :800px) {
+          .colagain {
+              width: 50%;
+              margin-bottom: 30px;
+          }
+      }
+      
+      @media(max-width :600px) {
+          .colagain {
+              width: 100%;
+          }
+      }*/
+
+#last {
+    display: flex;
+    align-text: center;
+}
+
+.pricing-table {
+    margin: 0;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    font-family: "lato" sans-serif;
+    background-color: rgba(173, 13, 13, 0.6);
+}
+
+.pricing-table .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 0px;
+    padding: 20px;
+}
+
+#searchspace {
+    font-weight: bold;
+    margin-bottom: 2px;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+#pri {
+    color: white;
+}
+
+.search {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin: 20px;
+    font-weight: 600;
+}
+
+#header-logo {
+    color: white;
+}
+
+.pricing-table .grid .box {
+    width: 250px;
+    border: 1px solid #eee;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 9px rgba(254, 255, 254, 0.2);
+}
+
+.box3 {
+    width: 250px;
+    border: 1px solid #eee;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 9px rgba(254, 255, 254, 0.2);
+}
+
+.pricing-table .grid .box .title {
+    font-size: 23px;
+    font-weight: bolder;
+    ;
+}
+
+.price {
+    margin-bottom: 30px;
+}
+
+.price b {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+
+.features>* {
+    padding: 19px 10px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(254, 254, 254, 0.1);
+}
+
+.submit-button button {
+    width: 100%;
+    margin: 20px 0px 0px;
+    padding: 10px;
+    background: linear-gradient(to bottom, #34ff, #0000);
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.advanced {
+    transform: scale(1.1);
+    background: black;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.advanced.title {
+    color: #fff;
+    font-weight: 600;
+    padding: 1px;
+    margin-top: 20px;
+}
+
+@media(max-width:804px) {
+    .pricing-table .grid {
+        gap: 40px;
+    }
+    .advanced {
+        transform: scale(1);
+    }
+}
